@@ -1,0 +1,71 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "Integrated Blog & Shop"
+theme = ["reporter", "hargo"]
+
+# Enable Hugo modules for theme management
+[module]
+  [[module.imports]]
+    path = "github.com/themefisher/reporter-bootstrap"
+    disable = false
+  [[module.imports]]
+    path = "github.com/gethugothemes/hargo-hugo"
+    disable = false
+
+[params]
+  # Common parameters
+  logo = "images/logo.png"
+  description = "Integrated Blog and E-commerce Site"
+  author = "Adrian"
+  contact_info = "adrianmcmains@gmail.com"
+  
+  # Social Media
+  facebook = "#"
+  twitter = "#"
+  instagram = "#"
+  
+  # Blog (Reporter Theme) specific parameters
+  [params.blog]
+    title = "Our Blog"
+    subtitle = "Latest Articles & News"
+    
+  # E-Commerce (Hargo Theme) specific parameters
+  [params.shop]
+    title = "Our Shop"
+    subtitle = "Quality Products"
+    currency = "UGX"
+
+[menu]
+  # Main Menu
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    weight = 2
+  [[menu.main]]
+    name = "Shop"
+    url = "/shop"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 5
+
+# Specify content directories for different sections
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+  productCategory = "product_categories"
+
+# Custom output formats for API
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]

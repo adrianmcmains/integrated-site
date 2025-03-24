@@ -1,0 +1,47 @@
+# Environment variables and credentials
+.env
+backend/config.yaml
+
+# Build artifacts
+frontend/public/
+frontend/resources/
+frontend/node_modules/
+frontend/.hugo_build.lock
+
+# Go build artifacts
+backend/tmp/
+backend/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Database data
+postgres_data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Hugo
+.hugo_build.lock
+public/
+resources/

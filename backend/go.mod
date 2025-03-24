@@ -1,4 +1,4 @@
-module github.com/yourusername/integrated-site
+module github.com/adrianmcmains/integrated-site
 
 go 1.22.2
 
